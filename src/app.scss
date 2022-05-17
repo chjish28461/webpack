@@ -1,0 +1,9 @@
+.aaa{
+    background: red;
+    color: #fff;
+    :global{
+        .bbb{
+            background: yellow;
+        }
+    }
+}
