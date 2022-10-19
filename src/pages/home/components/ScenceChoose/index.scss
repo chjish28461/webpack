@@ -1,0 +1,92 @@
+.wrap{
+  width: 100%;
+  padding-top: 100px;
+  .content{
+    width: 1400px;
+    margin: 0 auto;
+    .tabs{
+      :global{
+        .ant-tabs-bar{
+          border: 0;
+          .ant-tabs-nav{
+            .ant-tabs-tab{
+              padding: 12px 27px;
+              font-family: PingFangSC-Medium;
+              font-size: 14px;
+              color: #222222;
+              letter-spacing: 0;
+              font-weight: bold;
+              transition: none;
+              margin-right: 16px;
+              &-active{
+                background: #E1251B;
+                border-radius: 22px;
+                color: #fff;
+                height: 44px;
+              }
+            }
+            .ant-tabs-ink-bar{
+              display: none!important;
+            }
+          }
+        }
+      }
+      .tabbar{
+        display: flex;
+        .title{
+          height: 43px;
+          line-height: 43px;
+          font-family: FZZCHJW--GB1-0;
+          font-size: 30px;
+          color: #222222;
+          letter-spacing: 1px;
+          font-weight: bold;
+          padding-right: 32px;
+        }
+        :global{
+          .ant-tabs-bar{
+            flex: 1;
+            margin-bottom: 37px;
+          }
+        }
+      }
+      .carouselContainer{
+        height: 508px;
+        position: relative;
+        .prev,.next{
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 35px;
+          height: 35px;
+          color: #e0d9d9;
+          border-radius: 50%;
+          background: rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+        }
+        .next{
+          right: 0;
+          left: inherit;
+        }
+      }
+      .carousel{
+        :global{
+          .slick-dots{
+            li{
+              button{
+                background: grey;
+              }
+              &.slick-active{
+                background: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
