@@ -1,0 +1,25 @@
+.link{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: #222222;
+  padding-top: 24px;
+  .ul{
+    display: flex;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #DFE4E8;
+    font-weight: 400;
+    .li{
+      padding: 0 12px;
+      :global{
+        a{
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: #DFE4E8;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

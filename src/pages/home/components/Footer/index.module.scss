@@ -1,11 +1,13 @@
 .layout{
+  background: #fff;
   .content{
     width: 1400px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 0 30px;
     display: flex;
     .left{
       padding-right: 78px;
+      width: 294px;
       .logo{
         width: 116px;
         height: 44px;
@@ -50,20 +52,25 @@
     .right{
       display: flex;
       justify-content: space-between;
-      width: 100%;
+      flex: 1;
       .ul{
         padding-right: 10px;
         .li{
-          font-family: PingFangSC-Regular;
-          font-size: 14px;
-          color: #999999;
-          font-weight: 400;
           margin-bottom: 6px;
+          text-align: center;
+          font-family: PingFangSC-Medium;
+          font-size: 16px;
+          color: #222222;
+          font-weight: 500;
+          :global{
+            a{
+              font-family: PingFangSC-Regular;
+              font-size: 14px;
+              color: #999999;
+              font-weight: 400;
+            }
+          }
           &:nth-of-type(1){
-            font-family: PingFangSC-Medium;
-            font-size: 16px;
-            color: #222222;
-            font-weight: 500;
             margin-bottom: 16px;
           }
         }
