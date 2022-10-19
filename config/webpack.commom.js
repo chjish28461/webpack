@@ -26,12 +26,12 @@ const configs = {
                     presets: ['@babel/preset-react','@babel/preset-env']
                 }
             },
-            // {
-            //     test:/\.css$/,
-            //     use:[
-            //         'style-loader','css-loader?modules'
-            //     ]
-            // },
+            {
+                test:/\.css$/,
+                use:[
+                    'style-loader','css-loader'
+                ]
+            },
             {
                 test: /\.scss$/,
                 include: [

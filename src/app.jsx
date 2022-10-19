@@ -1,6 +1,6 @@
 import React,{ useState, useEffect } from "react";
+import { Button } from "antd";
 import styles from  "./app.scss";
-import "./demo.scss";
 
 function Index (){
 
@@ -14,12 +14,9 @@ function Index (){
     },[])
 
     return (
-        <>
-            <div className={styles.aaa}>
-                <div className="bbb">{num?.num}</div>
-            </div>
-            <div className="bbb">{num?.num}</div>
-        </>
+        <div className={styles.wrap}>
+            <Button type="primary">1111</Button>
+        </div>
     )
 }
 
